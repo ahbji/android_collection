@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LiveData</string>
+    <string name="add">加</string>
+    <string name="init">0</string>
+    <string name="label">长按进入自动计数器模式</string>
+</resources>
