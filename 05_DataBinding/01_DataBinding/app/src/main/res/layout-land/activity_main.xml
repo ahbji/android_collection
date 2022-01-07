@@ -55,6 +55,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline"
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/ic_add"
+            app:mainFabIcon="@{data.incrementMode}"
             tools:ignore="ImageContrastCheck" />
 
         <TextView
