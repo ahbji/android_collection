@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Scoreboard</string>
+    <string name="home">HOME</string>
+    <string name="guest">GUEST</string>
+    <string name="zero_point">0</string>
+    <string name="one_point">+1</string>
+    <string name="two_point">+2</string>
+    <string name="three_point">+3</string>
+    <string name="roll_back">Roll Back</string>
+    <string name="reset">Roll Back</string>
+</resources>

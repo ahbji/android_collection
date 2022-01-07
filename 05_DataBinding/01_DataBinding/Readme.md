@@ -56,7 +56,7 @@ xmlns:tools="http://schemas.android.com/tools">
 com.codingnight.android.databinding.databinding.ActivityMainBinding;
 ```
 
-接着使用 binding 表达式为 DataBinding layout 定义 ViewModel 和绑定数据访问和 UI 交互代码：
+接着使用 binding 表达式为 DataBinding layout 定义 ViewModel ，并绑定 LiveData 和 UI 交互代码：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -92,6 +92,11 @@ com.codingnight.android.databinding.databinding.ActivityMainBinding;
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
 ```
+> 注意，需要在 binding 表达式中直接使用 LiveData 对象才能让 DataBinding 框架自动为 LiveData 设置 Observer ，像这样的方式
+```xml
+android:text="@{String.valueOf(data.getNumber())}"
+```
+> 是无法自动设置 Observer 的。
 
 再 build 项目，然后在 Acitivity 中使用 DataBinding 类：
 - 使用 `DataBindingUtil.setContentView(this, R.layout.activity_main)` 替代 setContentView() 填充 UI，并返回一个 DataBinding 实例。
