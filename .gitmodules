@@ -1,0 +1,4 @@
+[submodule "05_DataBinding/02_BindingAdapter"]
+	path = 05_DataBinding/02_BindingAdapter
+	url = https://github.com/ahbji/android-databinding/
+	branch = study
