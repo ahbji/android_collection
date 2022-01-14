@@ -2,3 +2,7 @@
 	path = 05_DataBinding/02_BindingAdapter
 	url = https://github.com/ahbji/android-databinding/
 	branch = study
+[submodule "05_DataBinding/03_Twoway_Binding"]
+	path = 05_DataBinding/03_Twoway_Binding
+	url = https://github.com/ahbji/Workout.git
+	branch = study
