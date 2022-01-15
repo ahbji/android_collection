@@ -14,7 +14,7 @@ ViewModel 库将 View 相关的数据管理的代码从 UIController 中分离�
 
 下面以实现一个计数器应用为例使用 ViewModel 库。
 
-![screenshot](./Screenshot.png)
+![screenshot](Screenshot.png)
 
 数据模型类定义如下：
 
