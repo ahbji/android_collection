@@ -79,6 +79,20 @@ class DetailFragment : Fragment() {
 }
 ```
 
+当然也可以导航到 fragment 节点
+```kotlin
+class DetailFragment : Fragment() {
+    ...
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        getView()?.findViewById<View>(R.id.button2)?.setOnClickListener {
+            var navigation = Navigation.findNavController(it)
+            navigation.navigate(R.id.detailFragment)
+        }
+    }
+}
+```
+
 ## Activity 中获取 NavController
 
 ### 官方推荐方式
