@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sharedpreference</string>
+    <string name="file_key">MY_DATA</string>
+    <string name="number_key">NUMBER</string>
+</resources>
