@@ -1,5 +1,12 @@
 # Navigation
 
+## 重要概念
+
+- NavHost ：搭载 Fragment 的容器
+- Fragment：作为导航节点
+- NavController ：导航控制器，执行导航操作
+- Nav Graph ：导航图，描述导航节点和导航路径
+
 ## 设置依赖
 
 ```groovy
@@ -19,7 +26,7 @@
 2. Graph Editor：包含导航图的视觉表示形式。您可以在 Design 视图和 Text 视图中的底层 XML 表示形式之间切换。
 3. Attributes：显示导航图中当前所选项的属性。
 
-## 通过 XML 添加 NavHostFragment
+## 通过 XML 添加 NavHost
 
 ![](./add_NavHostFragment.png)
 
@@ -47,7 +54,7 @@
 
 如上图所示：
 1. 添加 Fragment
-2. 设置 startDestination 属性，指定路径的开始 Fragment
+2. 设置 startDestination 属性，指定默认加载的 Fragment
 3. 添加导航路径
 4. 添加返回路径
 
@@ -72,8 +79,22 @@ class DetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         getView()?.findViewById<View>(R.id.button2)?.setOnClickListener {
-            var navigation = Navigation.findNavController(it)
-            navigation.navigate(R.id.action_detail_to_home)
+            var controller = Navigation.findNavController(it)
+            controller.navigate(R.id.action_detail_to_home)
+        }
+    }
+}
+```
+
+当然也可以导航到 fragment 节点
+```kotlin
+class DetailFragment : Fragment() {
+    ...
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        getView()?.findViewById<View>(R.id.button2)?.setOnClickListener {
+            var controller = Navigation.findNavController(it)
+            controller.navigate(R.id.detailFragment)
         }
     }
 }
