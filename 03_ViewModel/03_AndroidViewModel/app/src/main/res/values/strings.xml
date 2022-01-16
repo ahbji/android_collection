@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">Counter</string>
+    <string name="add">add</string>
+    <string name="init">0</string>
+    <string name="label">Long press to enter automatic counter mode</string>
+    <string name="shp_name" translatable="false">COUNTER</string>
+    <string name="data_key" translatable="false">NUMBER</string>
+    <string name="btn_state_key" translatable="false">BTN</string>
+    <string name="run_thread_key" translatable="false">THREAD</string>
+</resources>
