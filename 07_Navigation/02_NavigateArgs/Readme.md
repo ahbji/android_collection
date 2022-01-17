@@ -1,16 +1,24 @@
 # 导航参数
 
-## 设置默认参数
+## 参数设置
 
-![](./def_nav_args.png)
+设置步骤如下图所示：
+![参数设置](./def_nav_args.png)
 
-查看参数设置
+这里需要提供设置项：
+- name: 导航参数名称
+- type: 导航参数类型
+- default value: 默认值
 
-![](./browse_nav_args_frag.png)
-
-![](./browse_nav_args_path.png)
+以下两个地方可以查看参数设置
+- 在节点中查看
+![在节点中查看参数设置](./browse_nav_args_frag.png)
+- 在路径中查看
+![在路径中查看参数设置](./browse_nav_args_path.png)
 
 ## 获取参数
+
+在 HomeFragment 中，直接通过 NavController 执行导航
 
 ```kotlin
 class HomeFragment : Fragment() {
@@ -24,6 +32,8 @@ class HomeFragment : Fragment() {
     }
 }
 ```
+
+在目标节点中，通过 get arguments 获取导航参数 
 
 ```kotlin
 const val NAME_PARAM = "name"
@@ -46,6 +56,8 @@ class DetailFragment : Fragment() {
 ```
 
 ## 动态传参
+
+NavController 执行导航时，也可以通过 bundle 传递导航参数：
 
 ```kotlin
 class HomeFragment : Fragment() {
