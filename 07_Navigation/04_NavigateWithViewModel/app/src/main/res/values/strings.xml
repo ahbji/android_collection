@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Navigate With ViewModel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="go">GO</string>
+    <string name="back">BACK</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="main">MAIN</string>
+    <string name="detail">DETAIL</string>
+</resources>
