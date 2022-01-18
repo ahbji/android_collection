@@ -2,7 +2,7 @@
 
 UIWidgetsCollectionActivity 展示常用的基础控件。
 
-![Screenshot1](./Screenshot1.png)
+![Screenshot1](Screenshot1.png)
 
 ## 文本控件
 
