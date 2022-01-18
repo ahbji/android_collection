@@ -6,3 +6,7 @@
 	path = 05_DataBinding/03_Twoway_Binding
 	url = https://github.com/ahbji/Workout.git
 	branch = study
+[submodule "Demos/MentalArithmetic"]
+	path = Demos/MentalArithmetic
+	url = https://github.com/ahbji/Mental-Arithmetic.git
+	branch = java
