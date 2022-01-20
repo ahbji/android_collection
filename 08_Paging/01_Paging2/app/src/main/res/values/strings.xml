@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PagingDemo</string>
+    <string name="generate">GENERATE</string>
+    <string name="clear">CLEAR</string>
+</resources>
