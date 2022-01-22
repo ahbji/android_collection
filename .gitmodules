@@ -10,3 +10,7 @@
 	path = Demos/MentalArithmetic
 	url = https://github.com/ahbji/Mental-Arithmetic.git
 	branch = java
+[submodule "01_AndroidUI/03_ShimmerLayout"]
+	path = 01_AndroidUI/03_ShimmerLayout
+	url = https://github.com/ahbji/Gallery
+	branch = ShimmerLayout
