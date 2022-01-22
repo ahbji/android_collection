@@ -1,5 +1,33 @@
 # 解析普通对象
 
+```java
+public class Person {
+    String name;
+    int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+```
+
 ```json
 {
   "age": 10,
@@ -15,6 +43,37 @@ Log.i("PERSON", person2.name + " " + person2.age);
 ```
 
 # 解析嵌套对象
+
+```java
+public class Student{
+@SerializedName("student_name")
+private String name;
+private int age;
+private Score score;
+
+    public Student(String name, int age, Score score) {
+        this.name = name;
+        this.age = age;
+        this.score = score;
+    }
+    ...
+}
+
+class Score {
+private int math;
+private int english;
+private int chinese;
+private final String grade;
+
+    public Score(int math, int english, int chinese) {
+        this.math = math;
+        this.english = english;
+        this.chinese = chinese;
+        ...
+    }
+    ...
+}
+```
 
 ```json
 {
@@ -35,6 +94,8 @@ String jsonStudent=gson.toJson(student1);
 Student student2=gson.fromJson(jsonStudent,Student.class);
 Log.i("Student",student2.getName()+" "+student2.getAge()+" "+student2.getScore().getGrade());
 ```
+
+> @SerializedName 注释可以指定序列化后的名字
 
 # 解析数组
 
