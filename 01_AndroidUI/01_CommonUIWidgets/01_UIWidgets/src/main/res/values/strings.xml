@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">UIWidgets</string>
+    <string name="textview">Display</string>
+    <string name="button3">Conform</string>
+    <string name="button2">left</string>
+    <string name="button1">right</string>
+    <string name="switch2">ON/OFF</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="editText">input number</string>
+    <string name="radiobutton1">telegram</string>
+    <string name="radiobutton2">apple</string>
+    <string name="imageView">image</string>
+    <string name="checkbox1">Chinese</string>
+    <string name="checkbox2">Math</string>
+    <string name="checkbox3">English</string>
+</resources>
