@@ -8,5 +8,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Android UI Widgets"
 include ':01_UIWidgets'
-include ':02_ViewPager2'
+include ':02_TabLayout'
 include ':03_Chronometer'
+include ':04_ViewPager2'
