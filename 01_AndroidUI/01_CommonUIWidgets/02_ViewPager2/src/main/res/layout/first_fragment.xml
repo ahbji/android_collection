@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.codeingnight.android.bottomnavigationdemo.FirstFragment">
+    tools:context="com.codingnight.example.viewpager.FirstFragment">
 
     <ImageView
         android:id="@+id/imageView"
