@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Navigation Drawer"
+include ':00_NavigationDrawer'
+include ':01_AppBarConfiguration'
+include ':02_DrawerWithToolbar'
+include ':03_EdgeToEdge'
+include ':04_CollapsingToolbarLayout'

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Navigation Drawer</string>
+    <string name="rotate">Rotate</string>
+    <string name="scale">Scale</string>
+    <string name="translate">Translate</string>
+    <string name="drawer_header_text">Drawer Header</string>
+</resources>

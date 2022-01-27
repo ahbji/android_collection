@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.codingnight.example.navigationdrawer.FirstFragment"
+        android:label="@string/rotate"
+        tools:layout="@layout/first_fragment" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.codingnight.example.navigationdrawer.SecondFragment"
+        android:label="@string/scale"
+        tools:layout="@layout/second_fragment" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.codingnight.example.navigationdrawer.ThirdFragment"
+        android:label="@string/translate"
+        tools:layout="@layout/third_fragment" />
+</navigation>
